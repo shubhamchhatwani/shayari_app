@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navi"
+    app:startDestination="@id/home2">
+
+    <fragment
+        android:id="@+id/home2"
+        android:name="com.swing.Shayarana.home"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_home2_to_sad"
+            app:destination="@id/sad" />
+        <action
+            android:id="@+id/action_home2_to_birthday"
+            app:destination="@id/birthday" />
+        <action
+            android:id="@+id/action_home2_to_love"
+            app:destination="@id/love" />
+        <action
+            android:id="@+id/action_home2_to_life"
+            app:destination="@id/life" />
+    </fragment>
+    <fragment
+        android:id="@+id/sad"
+        android:name="com.swing.Shayarana.sad"
+        android:label="fragment_sad"
+        tools:layout="@layout/fragment_sad" />
+    <fragment
+        android:id="@+id/birthday"
+        android:name="com.swing.Shayarana.birthday"
+        android:label="fragment_birthday"
+        tools:layout="@layout/fragment_birthday" />
+    <fragment
+        android:id="@+id/love"
+        android:name="com.swing.Shayarana.love"
+        android:label="fragment_love"
+        tools:layout="@layout/fragment_love" />
+    <fragment
+        android:id="@+id/life"
+        android:name="com.swing.Shayarana.Life"
+        android:label="fragment_life"
+        tools:layout="@layout/fragment_life" />
+</navigation>
